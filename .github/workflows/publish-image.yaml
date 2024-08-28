@@ -7,7 +7,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-    steos:
+    steps:
       - name: checkout
         uses: actions/checkout@v3
       - name: build

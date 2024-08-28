@@ -12,4 +12,5 @@ jobs:
           docker build . -t omnia156/justice-league-python-app:v1.0
       - name: publish
         run: |
+          docker login -u omnia156 -p ${{ secrets.DOCKER_HUB_TOKEN }}
           docker push omnia156/justice-league-python-app:v1.0
